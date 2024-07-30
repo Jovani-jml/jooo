@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+
+/*Nav*/
+
+.navbar{
+    width: 100%;
+    background-color: #090D11;
+}
+
+.nave-link{
+    color: white;
+    padding-right: 60px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    align-items: center;
+    transition: .3s;
+}
+
+.nave-link:hover{
+    color: gold;
+}
+
+.collapse{
+    line-height: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.carta{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    background-color: goldenrod;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.carta:hover{
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.navbar-nav .animate__animated{
+    animation-duration: 2s;
+}
+
+.main {
+    background-color: #090D11;
+}
+
+.form-titulo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top: 10%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-titulo h1:hover{
+    color: gold;
+}
+
+.formulario {
+    padding: 40px;
+}
+
+.form {
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding-bottom: 5%;
+    border: solid 2px #444;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form button {
+    background-color: gold;
+    border: none;
+    padding: 12px 20px;
+    color: #090D11;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+}
+
+.form button:hover {
+    background-color: #e5c100;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+.map {
+    padding-top: 5%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.map iframe:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
+}
+
+.social-media {
+    background-color: #090D11;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-media-title h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 2em; 
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.social-media-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: gold;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.social-media-title h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: gold;
+    color: #090D11;
+    transform: scale(1.1);
+}
+
+.social-icon.facebook {
+    background: linear-gradient(135deg, #3b5998, #192f5d);
+    width: 70px;
+    height: 70px;
+}
+
+.social-icon.facebook:hover {
+    background: linear-gradient(135deg, #3b5998, #192f5d);
+    color: gold;
+    border: 2px solid gold;
+}
+
+.social-icon.facebook i {
+    font-size: 35px;
+    background-clip: text;
+}
+
+.social-icon.instagram {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    width: 70px;
+    height: 70px;
+}
+
+.social-icon.instagram:hover {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    color: gold;
+    border: 2px solid gold;
+}
+
+.social-icon.instagram i {
+    font-size: 35px;
+    background-clip: text;
+}
+
+.social-icon.tiktok {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    background: linear-gradient(135deg, #000000, #6a6a6a);
+}
+
+.social-icon.tiktok:hover {
+    background: linear-gradient(135deg, #000000, #6a6a6a);
+    color: gold;
+    border: 2px solid gold;
+}
+
+.social-icon.tiktok i {
+    font-size: 35px;
+    background-clip: text;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #090D11;
+    color: white;
+    padding: 30px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer-content .titulo-nosotros {
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.footer-content p{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.footer-content .titulo-contacto{
+    text-align: center;
+}
+
+.footer-content .titulo-enlaces{
+    text-align: center;
+}
+
+.footer-content ul{
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: gold;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.contact-info i {
+    color: white;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nave-link {
+        padding-right: 0;
+        font-size: 15px;
+    }
+
+    .carta {
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .footer-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content .titulo-nosotros, 
+    .footer-content p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer-content .titulo-contacto, 
+    .footer-content .titulo-enlaces {
+        text-align: center;
+    }
+
+    .footer-content ul {
+        text-align: center;
+    }
+
+    .footer-content ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .footer-content ul li a {
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
